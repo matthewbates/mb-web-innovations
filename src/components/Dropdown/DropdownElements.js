@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DropdownContainer = styled.div`
   position: fixed;
-  z-index: 999;
+  z-index: ${({ isOpen }) => (isOpen ? 1 : -1)};
   width: 100%;
   height: 100%;
   background: #0d0d0d;

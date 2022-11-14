@@ -28,19 +28,8 @@ export default function Navbar() {
           <HeaderNavLinks key={id} title={item.to} />
         ))}
       </NavLinksWrapper>
-      <>
-        <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
-        <div
-          style={{
-            zIndex: isOpen ? 1 : -1,
-            top: 0,
-            right: 0,
-            position: "fixed",
-          }}
-        >
-          <Dropdown isOpen={isOpen} toggleDropdown={toggleDropdown} />
-        </div>
-      </>
+      <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Dropdown isOpen={isOpen} toggleDropdown={toggleDropdown} />
     </NavbarContainer>
   );
 }
