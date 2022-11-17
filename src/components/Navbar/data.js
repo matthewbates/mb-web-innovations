@@ -1,18 +1,18 @@
 export const navbarLinks = [
   {
     id: 1,
-    to: "Home",
+    to: "Experiences",
   },
   {
     id: 2,
-    to: "About",
+    to: "Work",
   },
   {
     id: 3,
-    to: "Testimonials",
+    to: "Reviews",
   },
   {
     id: 4,
-    to: "Contact",
+    to: "About",
   },
 ];

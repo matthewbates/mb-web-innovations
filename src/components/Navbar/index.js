@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { NavbarContainer, NavbarA, NavLinksWrapper } from "./NavbarElements";
-import Burger from "../Burger";
-import HeaderNavLinks from "../HeaderNavLinks";
+import {
+  NavbarContainer,
+  ImgWrapper,
+  Img,
+  NavLinksWrapper,
+  NavbarButton,
+} from "./NavbarElements";
 import { navbarLinks } from "./data";
+import logo from "../../assets/favicon.png";
+import HeaderNavLinks from "../HeaderNavLinks";
+import Burger from "../Burger";
 import Dropdown from "../Dropdown";
 
 export default function Navbar() {
@@ -23,6 +30,9 @@ export default function Navbar() {
 
   return (
     <NavbarContainer>
+      <ImgWrapper>
+        <Img src={logo} alt="logo" />
+      </ImgWrapper>
       <NavLinksWrapper>
         {navbarLinks.map((item, id) => (
           <HeaderNavLinks key={id} title={item.to} />
@@ -30,6 +40,7 @@ export default function Navbar() {
       </NavLinksWrapper>
       <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <Dropdown isOpen={isOpen} toggleDropdown={toggleDropdown} />
+      <NavbarButton>Contact</NavbarButton>
     </NavbarContainer>
   );
 }

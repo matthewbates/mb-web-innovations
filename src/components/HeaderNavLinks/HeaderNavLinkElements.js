@@ -14,4 +14,8 @@ export const HeaderLinkScroll = styled(Link)`
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
+
+  &:hover {
+    text-decoration: 2px solid white underline;
+  }
 `;
