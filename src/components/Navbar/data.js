@@ -1,7 +1,7 @@
 export const navbarLinks = [
   {
     id: 1,
-    to: "Experiences",
+    to: "Profile",
   },
   {
     id: 2,

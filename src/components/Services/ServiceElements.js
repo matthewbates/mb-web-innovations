@@ -1,50 +1,42 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
-  height: 80vh;
-  /* margin-left: 15px; */
-  /* margin-right: 15px; */
+export const Container = styled.div`
+  background: gray;
+  height: 100%;
+  width: 100vw;
 `;
 
-export const HeaderWrapper = styled.div`
-  max-width: 100%;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-`;
-
-export const CardWrapper = styled.div`
+export const FlexContainer = styled.div`
   display: flex;
-  gap: 120px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  gap: 2rem;
+  justify-content: space-evenly;
+`;
+
+export const FlexItems = styled.div`
+  margin-top: 2rem;
+`;
+
+export const Img = styled.img`
+  width: 250px;
+  height: 250px;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  align-self: center;
 `;
 
-export const Card = styled.div`
-  height: 200px;
-  width: 200px;
-`;
-
-export const CardImg = styled.img`
-  margin-top: 2rem;
-  margin-bottom: 40px;
-`;
-
-export const CardH2 = styled.h2`
-  font-size: 25px;
-  margin-bottom: 40px;
-  text-align: center;
-`;
-
-export const HeaderH2 = styled.h2`
+export const H2 = styled.h2`
+  max-width: 260px;
+  margin-top: 20px;
   font-family: "Poppins";
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 2.25rem;
+  justify-content: center;
 `;
 
-export const ItemContainer = styled.div`
+export const P = styled.p`
+  width: 100%;
+  max-width: 250px;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+  font-family: "Lato";
   text-align: center;
 `;

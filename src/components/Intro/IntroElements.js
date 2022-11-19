@@ -28,6 +28,7 @@ export const IntroLeftH1 = styled.h1`
   font-family: "Poppins";
   margin-left: 10%;
   margin-bottom: 40px;
+  color: ${(props) => props.color};
 
   @media screen and (max-width: 768px) {
     margin-left: 5%;

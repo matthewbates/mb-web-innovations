@@ -22,7 +22,7 @@ export default function Intro() {
   return (
     <IntroContainer>
       <IntroLeftWrapper>
-        <IntroLeftH1>
+        <IntroLeftH1 color="red">
           Better design,
           <IntroLeftSpan>better experiences.</IntroLeftSpan>
         </IntroLeftH1>

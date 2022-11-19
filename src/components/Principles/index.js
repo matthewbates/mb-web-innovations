@@ -2,20 +2,21 @@ import React from "react";
 import {
   Container,
   FlexContainer,
+  FlexColumn,
   FlexItems,
-  Img,
+  H1,
   H2,
   P,
-} from "./ServiceElements";
-import { serviceData } from "./data";
+} from "./PrincipleElements";
+import { principlesData } from "./data";
 
-export default function Services() {
+export default function Principles() {
   return (
     <Container>
+      <H1>Principles</H1>
       <FlexContainer>
-        {serviceData.map((item, index) => (
+        {principlesData.map((item, index) => (
           <FlexItems key={index}>
-            <Img src={item.image} />
             <H2>{item.title}</H2>
             <P>{item.text}</P>
           </FlexItems>

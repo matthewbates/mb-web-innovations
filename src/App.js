@@ -1,16 +1,16 @@
 import "./App.css";
-import "bulma/css/bulma.css";
 import React from "react";
-import Intro from "./components/Intro";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services";
+import Home from "./components/pages/Home";
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Intro />
-      <Services />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
