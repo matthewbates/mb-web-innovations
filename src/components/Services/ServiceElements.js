@@ -28,7 +28,7 @@ export const FlexContainer = styled.div`
 
 export const FlexItems = styled.div`
   /* margin-top: 2rem; */
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   color: #fff;
 `;
 
