@@ -12,7 +12,7 @@ export default function Footer() {
             <NavLinks to="/">Profile</NavLinks>
             <NavLinks to="/company">Work</NavLinks>
             <NavLinks to="/services">Reviews</NavLinks>
-            <NavLinks to="/gallery">About</NavLinks>
+            <NavLinks to="/contact">Contact</NavLinks>
           </Column>
           <Column>
             <NavLinks to="/">Facebook</NavLinks>
@@ -30,9 +30,9 @@ export default function Footer() {
               allow="geolocation"
               width="120%"
               height="250px"
-              frameborder="0"
+              frameBorder="0"
               scrolling="no"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </Column>
         </Row>

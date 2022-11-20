@@ -13,7 +13,7 @@ export const Box = styled.div`
 
 export const Container = styled.div`
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 `;
 
 export const Row = styled.div`
@@ -29,8 +29,8 @@ export const Row = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 65px;
+  margin-right: 66px;
   justify-content: center;
 
   align-items: center;
@@ -76,6 +76,7 @@ export const NavLinks = styled(LinkRoute)`
   position: relative;
   text-transform: uppercase;
   font-size: 16px;
+  cursor: pointer;
 
   &:hover {
     text-decoration: 1px solid underline;
@@ -94,27 +95,4 @@ export const Contact = styled.a`
   &:hover {
     text-decoration: 1px solid underline;
   }
-`;
-
-export const Heading = styled.h3`
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-family: "Poppins";
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-`;
-
-export const CopyrightText = styled.p`
-  font-size: 14px;
-  color: #090909;
-  text-align: center;
-`;
-
-export const TermsContainer = styled.div`
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1.5rem;
 `;
