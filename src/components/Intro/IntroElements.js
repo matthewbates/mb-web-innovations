@@ -20,7 +20,7 @@ export const IntroLeftWrapper = styled.div`
   flex-direction: column;
 
   @media screen and (max-width: 768px) {
-    height: 60vh;
+    /* height: 50vh; */
   }
 `;
 
@@ -30,10 +30,10 @@ export const IntroLeftH1 = styled.h1`
   margin-left: 10%;
   margin-bottom: 40px;
   color: #fff;
-  
+  font-size: 36px;
 
   @media screen and (max-width: 768px) {
-    margin-left: 5%;
+    margin-left: 10%;
     font-size: 2em;
   }
 `;
@@ -44,14 +44,15 @@ export const IntroLeftSpan = styled.span`
 `;
 
 export const IntroLeftP = styled.p`
-  font-family: "Lato";
+  font-family: "Poppins";
   margin-left: 10%;
   margin-right: 10%;
-  font-size: 28px;
+  font-size: 18px;
   color: #fff;
+  max-width: 420px;
 
   @media screen and (max-width: 768px) {
-    margin-left: 5%;
+    margin-left: 10%;
   }
 `;
 
@@ -61,7 +62,7 @@ export const IntroRightWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     height: 40vh;
-  }
+  } */
 `;

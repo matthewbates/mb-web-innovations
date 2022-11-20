@@ -31,9 +31,9 @@ export default function Intro() {
           interface should look good and work even better.
         </IntroLeftP>
       </IntroLeftWrapper>
-      <IntroRightWrapper
+      {/* <IntroRightWrapper
         style={{ backgroundImage: `url(${POSTER})` }}
-      ></IntroRightWrapper>
+      ></IntroRightWrapper> */}
     </IntroContainer>
   );
 }
