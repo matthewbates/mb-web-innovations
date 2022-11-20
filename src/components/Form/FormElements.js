@@ -87,6 +87,7 @@ export const FormLabel = styled.label`
 `;
 
 export const FormButton = styled.button`
+  border: 1px solid #f1f2f2;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -99,6 +100,9 @@ export const FormButton = styled.button`
   letter-spacing: 5px;
   transition: transform 0.25s;
   margin-top: 1rem;
+  background: transparent;
+  color: #f1f2f2;
+  font-family: "Poppins";
 
   @media screen and (max-width: 768px) {
     width: 40%;
@@ -107,5 +111,7 @@ export const FormButton = styled.button`
   &:hover {
     box-shadow: none;
     transition: 200ms ease-in;
+    background: #f1f2f2;
+    color: #090909;
   }
 `;
