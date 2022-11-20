@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
-  height: 50vh;
+  height: 100%;
   max-width: 100%;
   position: relative;
   overflow: hidden;
@@ -19,4 +19,6 @@ export const H1 = styled.h1`
   font-family: "Poppins";
   color: #fff;
   margin-top: 2rem;
+  overflow-y: hidden;
+  font-weight: 300;
 `;

@@ -30,6 +30,7 @@ export const IntroLeftH1 = styled.h1`
   margin-left: 10%;
   margin-bottom: 40px;
   color: #fff;
+  
 
   @media screen and (max-width: 768px) {
     margin-left: 5%;
@@ -39,6 +40,7 @@ export const IntroLeftH1 = styled.h1`
 
 export const IntroLeftSpan = styled.span`
   display: block;
+  overflow-y: hidden;
 `;
 
 export const IntroLeftP = styled.p`

@@ -5,6 +5,7 @@ import Arrows from "../Arrows";
 import Dots from "../Dots";
 import sliderImages from "../sliderImages";
 
+// set the
 const slideLength = sliderImages.length - 1;
 
 export default function Carousel() {
@@ -12,16 +13,18 @@ export default function Carousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      // if the current index is the last slide, go back to the first slide. Else, increment by 1 every 5.5 seconds
       setActiveIndex(activeIndex === slideLength ? 0 : activeIndex + 1);
     }, 5500);
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+  // if current index < 1 (first slide), go to the last slide. Else, decrement by 1
   const prevSlide = () => {
     setActiveIndex(activeIndex < 1 ? slideLength : activeIndex - 1);
   };
 
-  // if activeIndex is strictly equal to slideLength (end of slides), set index to 0, which is the first slide
+  // if current index is the last slide, go to the first slide. Else, increment by 1
   const nextSlide = () => {
     setActiveIndex(activeIndex === slideLength ? 0 : activeIndex + 1);
   };
@@ -30,12 +33,12 @@ export default function Carousel() {
     <CarouselContainer>
       <H1>Clients and colleagues talking</H1>
       <CarouselContent activeIndex={activeIndex} sliderImage={sliderImages} />
-      <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
+      {/* <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
       <Dots
         activeIndex={activeIndex}
         sliderImages={sliderImages}
         onClick={(activeIndex) => setActiveIndex(activeIndex)}
-      />
+      /> */}
     </CarouselContainer>
   );
 }

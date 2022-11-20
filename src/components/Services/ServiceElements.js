@@ -43,6 +43,7 @@ export const H2 = styled.h2`
   font-size: 24px;
   font-family: "Poppins";
   justify-content: center;
+  overflow-y: hidden;
 `;
 
 export const P = styled.p`

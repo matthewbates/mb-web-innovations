@@ -44,6 +44,7 @@ export const Button = styled.button`
 
 export const H1 = styled.h1`
   font-size: 70px;
+  overflow-y: hidden;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;

@@ -20,6 +20,7 @@ export default function Forms() {
             marginBottom: "2rem",
             fontFamily: "Poppins",
             fontSize: "36px",
+            overflowY: "hidden",
           }}
         >
           Let's Talk.
@@ -29,7 +30,6 @@ export default function Forms() {
             color: "#fff",
             marginBottom: "2rem",
             fontFamily: "Poppins",
-            
           }}
         >
           If you have a project in mind or are simply interested in finding out

@@ -1,5 +1,5 @@
 import "./App.css";
-// import "bulma/css/bulma.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";

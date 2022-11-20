@@ -19,7 +19,7 @@ export const Row = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 820px) {
     /* flex-direction: column; */
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +55,7 @@ export const H1 = styled.h1`
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  overflow-y: hidden;
 `;
 
 export const P = styled.p`

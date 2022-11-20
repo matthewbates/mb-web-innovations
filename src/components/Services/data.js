@@ -9,13 +9,13 @@ export const serviceData = [
     text: "This is where problem solving meets visual impact. uniting design and experiences.",
   },
   {
-    image: mobile,
-    title: "Mobile-Optimized Design",
-    text: "Using iOS, Android and an expert vision, I’ll take your application to the next level.",
-  },
-  {
     image: frontEnd,
     title: "Front End Development",
     text: "I’ll help you to bridge the gap between design and development.",
+  },
+  {
+    image: mobile,
+    title: "Mobile-Optimized Design",
+    text: "Using iOS, Android and an expert vision, I’ll take your application to the next level.",
   },
 ];

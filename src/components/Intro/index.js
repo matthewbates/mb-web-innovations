@@ -28,8 +28,7 @@ export default function Intro() {
         </IntroLeftH1>
         <IntroLeftP>
           As a developer and UI/UX web designer, I understand the perfect user
-          interface should look good and work even better. In short, I create
-          bolder online experiences.
+          interface should look good and work even better.
         </IntroLeftP>
       </IntroLeftWrapper>
       <IntroRightWrapper

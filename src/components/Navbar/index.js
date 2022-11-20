@@ -4,10 +4,10 @@ import {
   ImgWrapper,
   Img,
   NavLinksWrapper,
+  NavLinks,
 } from "./NavbarElements";
 import { navbarLinks } from "./data";
 import logo from "../../assets/favicon.png";
-import HeaderNavLinks from "../HeaderNavLinks";
 import Burger from "../Burger";
 import Dropdown from "../Dropdown";
 
@@ -29,9 +29,8 @@ export default function Navbar() {
         <Img src={logo} alt="logo" />
       </ImgWrapper>
       <NavLinksWrapper>
-        {navbarLinks.map((item, index) => (
-          <HeaderNavLinks key={index} title={item.to} />
-        ))}
+        <NavLinks to="/">Profile</NavLinks>
+        <NavLinks to="/contact">Contact</NavLinks>
       </NavLinksWrapper>
       <Burger isOpen={isOpen} toggleDropdown={toggleDropdown} />
       <Dropdown

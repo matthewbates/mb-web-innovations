@@ -10,17 +10,16 @@ export const DotsContainer = styled.div`
 
   .dot {
     cursor: pointer;
-    height: 0.5rem;
-    width: 0.5rem;
-    margin: 0px 8px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
+    height: 0.3rem;
+    width: 2rem;
+    margin: 0px 12px;
+    background-color: darkgray;
     display: inline-block;
   }
 
   .active-dot,
   .dot:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
   }
 `;
 
@@ -33,10 +32,5 @@ export const DotsWrapper = styled.span`
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     display: inline-block;
-  }
-
-  .active-dot,
-  .dot:hover {
-    background-color: rgba(255, 255, 255, 0.8);
   }
 `;
