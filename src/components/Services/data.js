@@ -1,20 +1,20 @@
-import one from "../../assets/javascript.png";
-import two from "../../assets/react.png";
-import three from "../../assets/css.png";
+import apps from "../../assets/apps.svg";
+import mobile from "../../assets/mobile.svg";
+import frontEnd from "../../assets/frontEnd.svg";
 
 export const serviceData = [
   {
-    image: two,
+    image: apps,
     title: "Web apps & Corporate Sites",
     text: "This is where problem solving meets visual impact. uniting design and experiences.",
   },
   {
-    image: two,
+    image: mobile,
     title: "Mobile-Optimized Design",
     text: "Using iOS, Android and an expert vision, I’ll take your application to the next level.",
   },
   {
-    image: two,
+    image: frontEnd,
     title: "Front End Development",
     text: "I’ll help you to bridge the gap between design and development.",
   },

@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   NavbarContainer,
   ImgWrapper,
   Img,
   NavLinksWrapper,
-  NavbarButton,
 } from "./NavbarElements";
 import { navbarLinks } from "./data";
 import logo from "../../assets/favicon.png";
@@ -14,19 +13,15 @@ import Dropdown from "../Dropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
 
-  const toggleSidebar = () => {
+  const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleDropdown = (e) => {
-    return e.currentTarget.innerWidth > 768 ? setIsOpen(false) : null;
+  const closeDropdown = () => {
+    setTimeout(() => setIsOpen(false), 1500);
   };
-
-  useEffect(() => {
-    window.addEventListener("resize", toggleDropdown);
-    return window.removeEventListener("resize", toggleDropdown);
-  });
 
   return (
     <NavbarContainer>
@@ -34,13 +29,16 @@ export default function Navbar() {
         <Img src={logo} alt="logo" />
       </ImgWrapper>
       <NavLinksWrapper>
-        {navbarLinks.map((item, id) => (
-          <HeaderNavLinks key={id} title={item.to} />
+        {navbarLinks.map((item, index) => (
+          <HeaderNavLinks key={index} title={item.to} />
         ))}
       </NavLinksWrapper>
-      <Burger isOpen={isOpen} toggleSidebar={toggleSidebar} />
-      <Dropdown isOpen={isOpen} toggleDropdown={toggleDropdown} />
-      <NavbarButton>Contact</NavbarButton>
+      <Burger isOpen={isOpen} toggleDropdown={toggleDropdown} />
+      <Dropdown
+        isOpen={isOpen}
+        toggleDropdown={toggleDropdown}
+        closeDropdown={closeDropdown}
+      />
     </NavbarContainer>
   );
 }

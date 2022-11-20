@@ -4,9 +4,12 @@ export const NavbarContainer = styled.div`
   display: flex;
   height: 100px;
   z-index: 999;
-  background: #05386b;
+  background: #f1f2f2;
+  border-bottom: 0.5px solid grey;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  gap: 2rem;
 `;
 
 export const ImgWrapper = styled.div`
@@ -30,19 +33,5 @@ export const NavLinksWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     display: none;
-  }
-`;
-
-export const NavbarButton = styled.button`
-  border-radius: 20px;
-  font-size: 16px;
-  padding: 10px;
-  margin-right: 2rem;
-  text-transform: uppercase;
-  font-family: "Poppins";
-
-  &:hover {
-    background: #05386b;
-    color: white;
   }
 `;

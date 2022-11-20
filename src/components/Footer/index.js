@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, Row, H1, Column, NavLinks, Container } from "./FooterElements";
+import {
+  Box,
+  Row,
+  H1,
+  Column,
+  Header,
+  NavLinks,
+  Container,
+} from "./FooterElements";
 import Copyright from "../Copyright";
 
 export default function Footer() {
@@ -9,17 +17,19 @@ export default function Footer() {
       <Container>
         <Row>
           <Column>
+            <Header>Links</Header>
             <NavLinks to="/">Profile</NavLinks>
             <NavLinks to="/company">Work</NavLinks>
-            <NavLinks to="/services">Reviews</NavLinks>
             <NavLinks to="/contact">Contact</NavLinks>
           </Column>
           <Column>
+            <Header>Socials</Header>
             <NavLinks to="/">Facebook</NavLinks>
             <NavLinks to="/company">Instagram</NavLinks>
             <NavLinks to="/services">LinkedIn</NavLinks>
           </Column>
           <Column>
+            <Header>Help</Header>
             <NavLinks to="#">Sitemap</NavLinks>
             <NavLinks to="#">Privacy</NavLinks>
             <NavLinks to="#">FAQ</NavLinks>

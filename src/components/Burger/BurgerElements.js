@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BurgerContainer = styled.div`
   display: none;
-  z-index: 2;
+  z-index: 999;
   width: 2rem;
   height: 2rem;
   /* display: flex; */
@@ -19,7 +19,7 @@ export const BurgerContainer = styled.div`
     width: 2rem;
 
     height: 0.25rem;
-    background: #fff;
+    background: ${({ isOpen }) => (isOpen ? "#fff" : "#090909")};
     border-radius: 20px;
     transform-origin: 1px;
     transition: all 0.4s linear;

@@ -5,33 +5,54 @@ export const Container = styled.div`
   color: #fff;
   width: 100vw;
   height: 100%;
+  border-bottom: 0.5px solid grey;
+`;
+
+export const HeaderWrapper = styled.div`
+  margin-bottom: 2rem;
 `;
 
 export const FlexContainer = styled.div`
-  /* display: flex; */
   columns: 2 auto;
-  break-inside: avoid;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  /* gap: 4rem; */
 
   @media screen and (max-width: 768px) {
     display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
   }
 `;
 
 export const FlexItems = styled.div`
-  margin-right: 10%;
   margin-left: 10%;
+  margin-right: 10%;
+  padding: 2.5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const H1 = styled.h1`
   text-align: center;
-  margin-bottom: 2rem;
+  font-family: "Poppins";
+  padding-top: 2rem;
+  font-size: 32px;
 `;
 
-export const H2 = styled.h2``;
+export const H2 = styled.h2`
+  padding-bottom: 1.5rem;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #fff;
+`;
 
 export const P = styled.p`
-  max-width: 420px;
+  font-size: 19px;
+  font-family: "Lato";
+  text-align: justify;
+  color: #979797;
 `;

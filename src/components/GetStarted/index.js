@@ -1,24 +1,30 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   FlexContainer,
   FlexItems,
+  H1,
+  P,
   ButtonContainer,
   Button,
 } from "./GetStartedElements";
 
 export default function GetStarted() {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/contact`;
+    navigate(path);
+  };
+
   return (
     <Container>
       <FlexContainer>
         <FlexItems>
-          <h1 style={{ fontSize: "70px" }}>Ready to get started?</h1>
-          <p style={{ fontSize: "30px" }}>
-            You know about me, let's talk about you.
-          </p>
+          <H1>Ready to get started?</H1>
+          <P>You know about me, let's talk about you.</P>
           <ButtonContainer style={{ gap: "40px" }}>
-            <Button>Check out my work</Button>
-            <Button>Shoot me a message</Button>
+            <Button onClick={routeChange}>Shoot me a message</Button>
           </ButtonContainer>
         </FlexItems>
       </FlexContainer>

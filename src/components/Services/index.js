@@ -1,6 +1,9 @@
 import React from "react";
+
 import {
   Container,
+  HeaderContainer,
+  HeaderH1,
   FlexContainer,
   FlexItems,
   Img,
@@ -12,6 +15,9 @@ import { serviceData } from "./data";
 export default function Services() {
   return (
     <Container>
+      <HeaderContainer>
+        <HeaderH1>Service Spectrum</HeaderH1>
+      </HeaderContainer>
       <FlexContainer>
         {serviceData.map((item, index) => (
           <FlexItems key={index}>

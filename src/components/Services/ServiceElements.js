@@ -1,9 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: gray;
+  background: #090909;
   height: 100%;
   width: 100vw;
+  border-bottom: 0.5px solid grey;
+`;
+
+export const HeaderContainer = styled.div`
+  text-align: center;
+  padding-top: 2rem;
+`;
+
+export const HeaderH1 = styled.h1`
+  font-family: "Poppins";
+  color: #fff;
 `;
 
 export const FlexContainer = styled.div`
@@ -16,7 +27,9 @@ export const FlexContainer = styled.div`
 `;
 
 export const FlexItems = styled.div`
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  margin-bottom: 2rem;
+  color: #fff;
 `;
 
 export const Img = styled.img`
@@ -27,16 +40,18 @@ export const Img = styled.img`
 
 export const H2 = styled.h2`
   max-width: 260px;
-  margin-top: 20px;
+  font-size: 24px;
   font-family: "Poppins";
   justify-content: center;
 `;
 
 export const P = styled.p`
   width: 100%;
+  line-height: 1.5rem;
   max-width: 250px;
   margin-top: 20px;
   margin-bottom: 2rem;
   font-family: "Lato";
-  text-align: center;
+  text-align: justify;
+  font-size: 19px;
 `;

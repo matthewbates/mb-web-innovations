@@ -4,7 +4,6 @@ import { Link as LinkRoute } from "react-router-dom";
 export const Box = styled.div`
   padding: 20px;
   background: #090909;
-  border-top: 0.5px solid grey;
 
   @media (max-width: 768px) {
     padding: 40px;
@@ -21,7 +20,9 @@ export const Row = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px !important;
   }
 `;
@@ -43,8 +44,8 @@ export const Column = styled.div`
 export const Header = styled.div`
   color: #fff;
   font-family: "Poppins";
-  line-height: 2rem;
   margin-bottom: 20px;
+  font-size: 28px;
 `;
 
 export const H1 = styled.h1`
