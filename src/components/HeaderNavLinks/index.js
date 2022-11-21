@@ -4,7 +4,7 @@ import {
   HeaderLinkScroll,
 } from "./HeaderNavLinkElements";
 
-export default function HeaderNavLinks({ title }) {
+export default function HeaderNavLinks({ title, classes }) {
   return (
     <HeaderLinksContainer>
       <HeaderLinkScroll
@@ -13,6 +13,7 @@ export default function HeaderNavLinks({ title }) {
         offset={0}
         smooth={true}
         duration={500}
+        className={classes}
         activeClass="active"
       >
         {title}

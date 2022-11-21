@@ -9,6 +9,7 @@ export const BurgerContainer = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
   cursor: pointer;
+  overflow-y: hidden;
 
   @media screen and (max-width: 767px) {
     display: flex;
@@ -17,12 +18,11 @@ export const BurgerContainer = styled.div`
 
   div {
     width: 2rem;
-
     height: 0.25rem;
     background: ${({ isOpen }) => (isOpen ? "#fff" : "#090909")};
     border-radius: 20px;
     transform-origin: 1px;
-    transition: all 0.4s linear;
+    /* transition: all 0.4s linear; */
     &:nth-child(1) {
       transform: ${({ isOpen }) => (isOpen ? "rotate(405deg)" : "rotate(0)")};
     }
