@@ -1,6 +1,6 @@
-import apps from "../../assets/apps.svg";
-import mobile from "../../assets/mobile.svg";
-import frontEnd from "../../assets/frontEnd.svg";
+import apps from "../../assets/services/apps.svg";
+import mobile from "../../assets/services/mobile.svg";
+import frontEnd from "../../assets/services/frontEnd.svg";
 
 export const serviceData = [
   {

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CarouselContainer, H1 } from "./CarouselElements";
 import CarouselContent from "../CarouselContent";
-import Arrows from "../Arrows";
-import Dots from "../Dots";
 import sliderImages from "../sliderImages";
 
 // set the
@@ -30,15 +28,14 @@ export default function Carousel() {
   };
 
   return (
-    <CarouselContainer>
+    <CarouselContainer id="Testimonials">
       <H1>Clients and colleagues talking</H1>
-      <CarouselContent activeIndex={activeIndex} sliderImage={sliderImages} />
-      {/* <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
-      <Dots
+      <CarouselContent
         activeIndex={activeIndex}
-        sliderImages={sliderImages}
-        onClick={(activeIndex) => setActiveIndex(activeIndex)}
-      /> */}
+        sliderImage={sliderImages}
+        prevSlide={prevSlide}
+        nextSlide={nextSlide}
+      />
     </CarouselContainer>
   );
 }

@@ -12,15 +12,17 @@ export const Box = styled.div`
 
 export const Container = styled.div`
   margin-top: 1.5rem;
-  /* margin-bottom: 1.5rem; */
 `;
 
 export const Row = styled.div`
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
 
   @media screen and (max-width: 820px) {
-    /* flex-direction: column; */
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     gap: 40px !important;
@@ -32,8 +34,6 @@ export const Column = styled.div`
   flex-direction: column;
   margin-left: 65px;
   margin-right: 66px;
-  justify-content: center;
-
   align-items: center;
 
   @media screen and (max-width: 768px) {
@@ -58,18 +58,7 @@ export const H1 = styled.h1`
   overflow-y: hidden;
 `;
 
-export const P = styled.p`
-  font-family: "Lato";
-  font-weight: 300;
-  color: #fff;
-  margin-bottom: 10px;
-  text-decoration: none;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 14px;
-`;
-
-export const NavLinks = styled(LinkRoute)`
+export const NavLinks = styled.a`
   font-family: "Lato";
   font-weight: 300;
   color: #fff;
@@ -79,20 +68,6 @@ export const NavLinks = styled(LinkRoute)`
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
-
-  &:hover {
-    text-decoration: 1px solid underline;
-  }
-`;
-
-export const Contact = styled.a`
-  font-family: "Lato";
-  color: #fff;
-  margin-bottom: 20px;
-  text-decoration: none;
-  line-height: 30px;
-  font-weight: 300;
-  font-size: 14px;
 
   &:hover {
     text-decoration: 1px solid underline;

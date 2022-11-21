@@ -1,11 +1,16 @@
 export const navbarLinks = [
   {
-    to: "Profile",
+    to: "Home",
   },
   {
-    to: "Work",
+    to: "Services",
   },
-
+  {
+    to: "Principles",
+  },
+  {
+    to: "Testimonials",
+  },
   {
     to: "Contact",
   },

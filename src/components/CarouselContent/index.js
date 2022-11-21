@@ -1,14 +1,21 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Img, Wrapper, H3, H4, P } from "./CarouselContentElements";
 import slides from "../sliderImages";
 
-export default function CarouselContent({ activeIndex }) {
+export default function CarouselContent({ activeIndex, nextSlide }) {
   return (
     <Container>
-      <Carousel controls={false} interval={5500}>
+      <Carousel
+        activeIndex={activeIndex}
+        onSelect={nextSlide}
+        controls={false}
+        interval={6500}
+        variant="dark"
+      >
         {slides.map((item, index) => (
           <Carousel.Item
+            key={index}
             style={{
               textAlign: "center",
             }}

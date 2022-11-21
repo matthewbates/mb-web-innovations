@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -10,6 +9,7 @@ export const NavbarContainer = styled.div`
   align-items: center;
   /* justify-content: space-between; */
   /* justify-content: flex-start; */
+  
   gap: 2rem;
 `;
 
@@ -30,26 +30,27 @@ export const Img = styled.img`
 
 export const NavLinksWrapper = styled.div`
   display: flex;
+  justify-content: center;
+  gap: 0.5rem;
   margin-right: 2rem;
-  color: black;
 
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-export const NavLinks = styled(Link)`
-  font-family: "Poppins";
-  color: #090909;
-  text-decoration: none;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 0 2rem;
-  font-weight: bold;
+// export const NavLinks = styled(Link)`
+//   font-family: "Poppins";
+//   color: #090909;
+//   text-decoration: none;
+//   position: relative;
+//   text-transform: uppercase;
+//   font-size: 18px;
+//   cursor: pointer;
+//   padding: 0 2rem;
+//   font-weight: bold;
 
-  &:hover {
-    text-decoration: 1px solid #090990 underline;
-  }
-`;
+//   &:hover {
+//     text-decoration: 1px solid #090990 underline;
+//   }
+// `;

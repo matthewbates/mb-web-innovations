@@ -28,17 +28,27 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  /* margin: 0px 15px; */
-  padding: 15px;
-  border-radius: 20px;
-  font-size: 22px;
-  font-weight: 500;
-  font-family: "Poppins";
+  border: 1px solid #f1f2f2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   cursor: pointer;
+  text-transform: uppercase;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 5px;
+  transition: transform 0.25s;
+  margin-top: 1rem;
+  background: transparent;
+  color: #f1f2f2;
+  font-family: "Poppins";
 
   &:hover {
-    transition: 200ms ease-in-out;
-    filter: brightness(80%);
+    box-shadow: none;
+    transition: 200ms ease-in;
+    background: #f1f2f2;
+    color: #090909;
   }
 `;
 

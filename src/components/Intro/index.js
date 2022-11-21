@@ -5,22 +5,11 @@ import {
   IntroLeftH1,
   IntroLeftP,
   IntroLeftSpan,
-  IntroRightWrapper,
-  // HeroContainer,
-  // TextContainer,
-  // TextWrapper,
-  // Text,
-  // TextH1,
-  // TextSpan,
-  // TextP,
-  // ImgWrapper,
-  // HeroImg,
 } from "./IntroElements";
-import POSTER from "../../assets/poster.jpeg";
 
 export default function Intro() {
   return (
-    <IntroContainer>
+    <IntroContainer id="home">
       <IntroLeftWrapper>
         <IntroLeftH1 color="red">
           Better design,
@@ -31,9 +20,6 @@ export default function Intro() {
           interface should look good and work even better.
         </IntroLeftP>
       </IntroLeftWrapper>
-      {/* <IntroRightWrapper
-        style={{ backgroundImage: `url(${POSTER})` }}
-      ></IntroRightWrapper> */}
     </IntroContainer>
   );
 }

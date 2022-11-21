@@ -1,10 +1,10 @@
 import React from "react";
-import Forms from "../../components/Form";
+import Forms from "../Form";
 import { Container } from "./ContactELements";
 
 export default function Contact() {
   return (
-    <Container>
+    <Container id="Contact">
       <Forms />
     </Container>
   );

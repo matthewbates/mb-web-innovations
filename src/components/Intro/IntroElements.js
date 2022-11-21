@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import POSTER from "../../assets/poster.jpeg";
 
 export const IntroContainer = styled.div`
   display: flex;

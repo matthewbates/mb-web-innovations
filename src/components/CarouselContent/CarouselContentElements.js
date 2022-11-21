@@ -12,16 +12,17 @@ export const Img = styled.img``;
 
 export const Wrapper = styled.div`
   background: lightgray;
-  margin-top: -6%;
+  margin-top: -4%;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 8%;
+  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
   border: 1px solid #ddd;
   height: 286px;
   overflow-y: hidden;
+  text-transform: uppercase;
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -36,7 +37,7 @@ export const H3 = styled.h3`
   margin-bottom: 4px;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 20px;
 `;
 
 export const H4 = styled.h4`
@@ -60,7 +61,7 @@ export const P = styled.p`
 
   &::before {
     content: "“";
-    color: #aaa;
+    color: #090909;
     font-size: 26px;
     font-family: monospace;
     font-weight: 100;
@@ -68,7 +69,7 @@ export const P = styled.p`
 
   &::after {
     content: "”";
-    color: #aaa;
+    color: #090909;
     font-size: 26px;
     font-family: monospace;
     font-weight: 100;

@@ -11,11 +11,11 @@ import {
 } from "./GetStartedElements";
 
 export default function GetStarted() {
-  let navigate = useNavigate();
-  const routeChange = () => {
-    let path = `/contact`;
-    navigate(path);
-  };
+  // let navigate = useNavigate();
+  // const routeChange = () => {
+  //   let path = `/contact`;
+  //   navigate(path);
+  // };
 
   return (
     <Container>
@@ -24,7 +24,7 @@ export default function GetStarted() {
           <H1>Ready to get started?</H1>
           <P>You know about me, let's talk about you.</P>
           <ButtonContainer style={{ gap: "40px" }}>
-            <Button onClick={routeChange}>Shoot me a message</Button>
+            <Button>Shoot me a message</Button>
           </ButtonContainer>
         </FlexItems>
       </FlexContainer>

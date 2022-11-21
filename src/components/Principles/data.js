@@ -1,7 +1,7 @@
 export const principlesData = [
   {
-    title: "UX is the sum of all things.",
-    text: "There’s no style over substance here. I bring together form and the function to create something that looks good and performs brilliantly. Simple.",
+    title: "UX - the sum of all things.",
+    text: "There’s no style over substance. I bring together form and function to create something that looks good and performs brilliantly.",
   },
   {
     title: "Perfection doesn't do a 9-5.",

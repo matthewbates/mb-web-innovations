@@ -7,9 +7,11 @@ import {
   NavLinks,
 } from "./NavbarElements";
 import { navbarLinks } from "./data";
+import HeaderNavLinks from "../HeaderNavLinks";
 import logo from "../../assets/favicon.png";
 import Burger from "../Burger";
 import Dropdown from "../Dropdown";
+import { Header } from "../Footer/FooterElements";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +31,9 @@ export default function Navbar() {
         <Img src={logo} alt="logo" />
       </ImgWrapper>
       <NavLinksWrapper>
-        <NavLinks to="/">Profile</NavLinks>
-        <NavLinks to="/contact">Contact</NavLinks>
+        {navbarLinks.map((item, index) => (
+          <HeaderNavLinks key={index} title={item.to} />
+        ))}
       </NavLinksWrapper>
       <Burger isOpen={isOpen} toggleDropdown={toggleDropdown} />
       <Dropdown

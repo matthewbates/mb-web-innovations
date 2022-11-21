@@ -13,7 +13,7 @@ import { principlesData } from "./data";
 
 export default function Principles() {
   return (
-    <Container>
+    <Container id="Principles">
       <HeaderWrapper>
         <H1>Principles</H1>
       </HeaderWrapper>

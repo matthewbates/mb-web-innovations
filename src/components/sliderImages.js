@@ -1,30 +1,27 @@
-import one from "../assets/javascript.png";
-import two from "../assets/react.png";
-import harvard from "../assets/harvard.jpg";
+import dylan from "../assets//testimonials/dylan.jpeg";
+import one from "../assets/testimonials/javascript.png";
+import two from "../assets/testimonials/react.png";
 
 export default [
   {
     id: 1,
-    text: "This is the first slide!",
-    image: one,
-    name: "First Name",
-    title: "First Title",
-    text: " It's freeing to be able to catch up on customized news and not be distracted by a social media element do on the same site",
+    image: dylan,
+    name: "Dylan Dupasquier",
+    title: "Front-end developer",
+    text: "Matthew is very knowledgeable in both front end functionality and design. It has been a pleasure to collaborate with him.",
   },
   {
     id: 2,
-    text: "This is the second slide!",
-    image: two,
+    image: one,
     name: "Second Name",
     title: "Second Title",
-    text: " The simple and intuitive design makes it easy for me use. I highly recommend Fetch to my peers.",
+    text: "The simple and intuitive design makes it easy for me use. I highly recommend Fetch to my peers.",
   },
   {
     id: 3,
-    text: "This is the third slide!",
-    image: one,
+    image: two,
     name: "Third Name",
     title: "Third Title",
-    text: " I enjoy catching up with Fetch on my laptop, or on my phone when I'm on the go!",
+    text: "I enjoy catching up with Fetch on my laptop, or on my phone when I'm on the go!",
   },
 ];
