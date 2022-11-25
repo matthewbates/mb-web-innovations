@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { navbarLinks } from "./data";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   NavbarContainer,
   ImgWrapper,
@@ -15,14 +15,25 @@ import Dropdown from "../Dropdown";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState(null);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
+  const onResize = (e) => {
+    return e.currentTarget.innerWidth > 768 ? setIsOpen(false) : null;
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  });
+
+  // close the dropdown after 800ms when a link is clicked
   const closeDropdown = () => {
-    setTimeout(() => setIsOpen(false), 500);
+    setTimeout(() => setIsOpen(false), 800);
   };
 
   return (
