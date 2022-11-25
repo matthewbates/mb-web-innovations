@@ -2,4 +2,5 @@
   box-sizing: border-box;
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: auto !important;
 }

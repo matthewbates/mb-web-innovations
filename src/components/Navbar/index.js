@@ -1,3 +1,5 @@
+import gsap from "gsap";
+import { navbarLinks } from "./data";
 import React, { useState } from "react";
 import {
   NavbarContainer,
@@ -6,12 +8,10 @@ import {
   NavLinksWrapper,
   NavLinks,
 } from "./NavbarElements";
-import { navbarLinks } from "./data";
-import HeaderNavLinks from "../HeaderNavLinks";
 import logo from "../../assets/favicon.png";
+import HeaderNavLinks from "../HeaderNavLinks";
 import Burger from "../Burger";
 import Dropdown from "../Dropdown";
-import { Header } from "../Footer/FooterElements";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,13 +22,13 @@ export default function Navbar() {
   };
 
   const closeDropdown = () => {
-    setTimeout(() => setIsOpen(false), 1500);
+    setTimeout(() => setIsOpen(false), 500);
   };
 
   return (
     <NavbarContainer>
       <ImgWrapper>
-        <Img src={logo} alt="logo" />
+        <Img className="logo" src={logo} alt="logo" />
       </ImgWrapper>
       <NavLinksWrapper>
         {navbarLinks.map((item, index) => (

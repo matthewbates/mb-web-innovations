@@ -24,6 +24,8 @@ export const FlexContainer = styled.div`
   text-align: center;
   gap: 2rem;
   justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
 `;
 
 export const FlexItems = styled.div`

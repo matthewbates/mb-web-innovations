@@ -22,9 +22,6 @@ export const Row = styled.div`
   justify-content: space-evenly;
 
   @media screen and (max-width: 820px) {
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
     gap: 40px !important;
   }
 `;
