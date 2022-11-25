@@ -1,21 +1,19 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
 import {
   Container,
   FlexContainer,
   FlexItems,
   H1,
   P,
+  ScrollLink,
   ButtonContainer,
-  Button,
 } from "./GetStartedElements";
 
 export default function GetStarted() {
-  // let navigate = useNavigate();
-  // const routeChange = () => {
-  //   let path = `/contact`;
-  //   navigate(path);
-  // };
+  const scrollToContact = () => {
+    window.scrollTo({ top: "0" });
+  };
 
   return (
     <Container>
@@ -24,7 +22,9 @@ export default function GetStarted() {
           <H1>Ready to get started?</H1>
           <P>You know about me, let's talk about you.</P>
           <ButtonContainer style={{ gap: "40px" }}>
-            <Button>Shoot me a message</Button>
+            <ScrollLink to="Contact" smooth={true}>
+              Shoot me a message
+            </ScrollLink>
           </ButtonContainer>
         </FlexItems>
       </FlexContainer>

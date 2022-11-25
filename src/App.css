@@ -4,3 +4,15 @@
   overflow-x: hidden;
   scroll-behavior: auto !important;
 }
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f2f2;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #090909;
+  border: 3px solid #f1f2f2;
+  border-radius: 120px;
+}

@@ -16,23 +16,23 @@ export const FlexContainer = styled.div`
   columns: 2 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  /* gap: 4rem; */
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
   }
 `;
 
 export const FlexItems = styled.div`
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 10%;
   padding: 2.5rem;
 
   @media screen and (max-width: 768px) {
     padding: 0;
+    margin-right: 10%;
   }
 `;
 

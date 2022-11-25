@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const Container = styled.div`
   background: #090909;
@@ -23,37 +24,42 @@ export const FlexItems = styled.div`
   margin-bottom: 4rem;
 `;
 
+export const ScrollLink = styled(Link)`
+  color: #fff;
+  margin-top: 4rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #05386b;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    color: #fff;
+  }
+`;
+
 export const ButtonContainer = styled.div`
   margin-top: 4rem;
 `;
 
-export const Button = styled.button`
-  border: 1px solid #f1f2f2;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  padding: 15px;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 5px;
-  transition: transform 0.25s;
-  margin-top: 1rem;
-  background: transparent;
-  color: #f1f2f2;
-  font-family: "Poppins";
-
-  &:hover {
-    box-shadow: none;
-    transition: 200ms ease-in;
-    background: #f1f2f2;
-    color: #090909;
-  }
-`;
-
 export const H1 = styled.h1`
-  font-size: 70px;
+  font-size: 60px;
   overflow-y: hidden;
 
   @media screen and (max-width: 768px) {
@@ -62,7 +68,7 @@ export const H1 = styled.h1`
 `;
 
 export const P = styled.p`
-  font-size: 32px;
+  font-size: 24px;
 
   @media screen and (max-width: 768px) {
     font-size: 16px;

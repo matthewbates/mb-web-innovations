@@ -11,7 +11,7 @@ export const navbarLinks = [
   {
     to: "Testimonials",
   },
-  {
-    to: "Contact",
-  },
+  // {
+  //   to: "Contact",
+  // },
 ];

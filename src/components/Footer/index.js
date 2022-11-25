@@ -13,7 +13,7 @@ import Copyright from "../Copyright";
 export default function Footer() {
   return (
     <Box>
-      <H1>MB Web Innovations</H1>
+      <H1>MB Web Designs</H1>
       <Container>
         <Row>
           <Column>

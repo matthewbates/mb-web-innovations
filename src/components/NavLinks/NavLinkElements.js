@@ -15,9 +15,10 @@ export const LinksContainer = styled.li`
 
 export const LinkScroll = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #f1f2f2;
 
   &:hover {
-    color: #979797;
+    transition: 200ms ease-in-out;
+    color: #fff;
   }
 `;

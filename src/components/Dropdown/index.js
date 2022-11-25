@@ -2,9 +2,9 @@ import React from "react";
 import { DropdownContainer, DropdownUl, NavLink } from "./DropdownElements";
 import NavLinks from "../NavLinks";
 
-export default function Dropdown({ isOpen, toggleDropdown, closeDropdown }) {
+export default function Dropdown({ isOpen, closeDropdown }) {
   return (
-    <DropdownContainer isOpen={isOpen} onClick={toggleDropdown}>
+    <DropdownContainer isOpen={isOpen}>
       <DropdownUl>
         <NavLinks closeDropdown={closeDropdown} title={"Home"} />
         <NavLinks closeDropdown={closeDropdown} title={"Services"} />

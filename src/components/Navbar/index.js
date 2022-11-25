@@ -3,10 +3,10 @@ import { navbarLinks } from "./data";
 import React, { useState, useEffect } from "react";
 import {
   NavbarContainer,
+  ContactLink,
   ImgWrapper,
   Img,
   NavLinksWrapper,
-  NavLinks,
 } from "./NavbarElements";
 import logo from "../../assets/favicon.png";
 import HeaderNavLinks from "../HeaderNavLinks";
@@ -20,21 +20,23 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  // close the dropdown after 800ms when a link is clicked
+  const closeDropdown = () => {
+    setTimeout(() => setIsOpen(false), 800);
+  };
+
+  // if the page > 768px, close the dropdown
   const onResize = (e) => {
     return e.currentTarget.innerWidth > 768 ? setIsOpen(false) : null;
   };
 
+  // logic to add/remove onResize function
   useEffect(() => {
     window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
     };
   });
-
-  // close the dropdown after 800ms when a link is clicked
-  const closeDropdown = () => {
-    setTimeout(() => setIsOpen(false), 800);
-  };
 
   return (
     <NavbarContainer>
@@ -46,6 +48,9 @@ export default function Navbar() {
           <HeaderNavLinks key={index} title={item.to} />
         ))}
       </NavLinksWrapper>
+      <ContactLink to="Contact" smooth={true} duration={700}>
+        Contact
+      </ContactLink>
       <Burger isOpen={isOpen} toggleDropdown={toggleDropdown} />
       <Dropdown
         isOpen={isOpen}

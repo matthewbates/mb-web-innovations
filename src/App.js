@@ -18,8 +18,8 @@ export default function App() {
       <Intro />
       <Services />
       <Principles />
-      <Carousel />
       <GetStarted />
+      <Carousel />
       <Contact />
       <Footer />
     </>

@@ -8,13 +8,18 @@ export const HeaderLinksContainer = styled.div`
 export const HeaderLinkScroll = styled(Link)`
   cursor: pointer;
   padding: 1.4rem;
-  font-family: "Space Mono";
+  font-family: "Poppins";
   position: relative;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 6px;
-  color: #05386b;
-  font-weight: bold;
-  text-transform: uppercase;
+  color: #090909;
+  text-decoration: none;
+
+  &:hover {
+    transition: 200ms ease-in-out;
+    font-weight: bold;
+    color: #090909;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1000px) {
     padding: 0.8rem;
