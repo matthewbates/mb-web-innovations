@@ -1,5 +1,5 @@
-import dylan from "../assets//testimonials/dylan.jpeg";
-import one from "../assets/testimonials/javascript.png";
+import dylan from "../assets/testimonials/dylan.jpeg";
+import morgan from "../assets/testimonials/morgan.jpeg";
 import two from "../assets/testimonials/react.png";
 
 export default [
@@ -12,10 +12,10 @@ export default [
   },
   {
     id: 2,
-    image: one,
-    name: "Second Name",
-    title: "Second Title",
-    text: "The simple and intuitive design makes it easy for me use. I highly recommend Fetch to my peers.",
+    image: morgan,
+    name: "Morgan VanYperen",
+    title: "Instructor III at Flatiron School",
+    text: "Matthew has always been great and easy to work with. He's pro-active when it comes to communicating about expectations and is determined to do things right.",
   },
   {
     id: 3,

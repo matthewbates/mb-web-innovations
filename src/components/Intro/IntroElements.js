@@ -49,6 +49,13 @@ export const IntroLeftH1 = styled.h1`
     font-size: 28px;
     line-height: 40px;
   }
+
+  @media screen and (max-width: 420px) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    max-width: 420px;
+  }
 `;
 
 export const IntroLeftSpan = styled.span`
@@ -68,15 +75,4 @@ export const IntroLeftP = styled.p`
   @media screen and (max-width: 768px) {
     margin-left: 10%;
   }
-`;
-
-export const IntroRightWrapper = styled.div`
-  flex: 30%;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* @media screen and (max-width: 768px) {
-    height: 40vh;
-  } */
 `;

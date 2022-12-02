@@ -27,6 +27,7 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     width: 80%;
     padding-top: 10%;
+    margin-top: -5%;
   }
 `;
 
@@ -42,8 +43,6 @@ export const H3 = styled.h3`
 
 export const H4 = styled.h4`
   text-transform: uppercase;
-  margin-top: 0;
-  padding-top: 0;
   font-weight: 500;
   color: #787878;
   font-size: 14px;
@@ -55,7 +54,7 @@ export const P = styled.p`
   color: #222;
   font-size: 15px;
   font-family: sans-serif;
-  padding-top: 5%;
+  /* padding-top: 2%; */
   /* max-height: 67px; */
   overflow-y: hidden;
 

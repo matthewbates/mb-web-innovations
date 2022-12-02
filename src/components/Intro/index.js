@@ -4,7 +4,6 @@ import {
   IntroContainer,
   Img,
   IntroLeftWrapper,
-  Wrapper,
   IntroLeftH1,
   IntroLeftP,
   IntroLeftSpan,
