@@ -19,10 +19,10 @@ export const ContactLink = styled(Link)`
   margin-right: 2rem;
   text-decoration: none;
   color: #090909;
-  border: 1px solid #090909;
   padding: 8px;
   border-radius: 20px;
   font-family: "Poppins";
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -60,19 +60,3 @@ export const NavLinksWrapper = styled.div`
     display: none;
   }
 `;
-
-// export const NavLinks = styled(Link)`
-//   font-family: "Poppins";
-//   color: #090909;
-//   text-decoration: none;
-//   position: relative;
-//   text-transform: uppercase;
-//   font-size: 18px;
-//   cursor: pointer;
-//   padding: 0 2rem;
-//   font-weight: bold;
-
-//   &:hover {
-//     text-decoration: 1px solid #090990 underline;
-//   }
-// `;

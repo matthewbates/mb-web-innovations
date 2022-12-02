@@ -3,10 +3,10 @@ import { Link } from "react-scroll";
 
 export const DropdownContainer = styled.div`
   position: fixed;
-  z-index: ${({ isOpen }) => (isOpen ? 1 : -1)};
+  /* z-index: ${({ isOpen }) => (isOpen ? 1 : -1)}; */
   width: 100%;
   /* height: 100%; */
-  height: 40%;
+  height: 30%;
   top: 0;
   left: 0;
   background: #0d0d0d;

@@ -18,16 +18,6 @@ export const Form = styled.form`
   }
 `;
 
-export const FormFullName = styled.div`
-  display: flex;
-  width: 50%;
-  gap: 0.5rem;
-
-  @media screen and (max-width: 768px) {
-    width: 90%;
-  }
-`;
-
 export const TextInput = styled.input`
   font-family: "Poppins";
   display: flex;

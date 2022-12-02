@@ -1,5 +1,5 @@
 import React from "react";
-import { DropdownContainer, DropdownUl, NavLink } from "./DropdownElements";
+import { DropdownContainer, DropdownUl } from "./DropdownElements";
 import NavLinks from "../NavLinks";
 
 export default function Dropdown({ isOpen, closeDropdown }) {
