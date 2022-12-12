@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { CarouselContainer, H1 } from "./CarouselElements";
 import CarouselContent from "../CarouselContent";
-import sliderImages from "../sliderImages";
+import { testimonials } from "../sliderImages";
 
 // set the
-const slideLength = sliderImages.length - 1;
+const slideLength = testimonials.length - 1;
 
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,7 +32,7 @@ export default function Carousel() {
       <H1>Clients and colleagues talking</H1>
       <CarouselContent
         activeIndex={activeIndex}
-        sliderImage={sliderImages}
+        sliderImage={testimonials}
         prevSlide={prevSlide}
         nextSlide={nextSlide}
       />

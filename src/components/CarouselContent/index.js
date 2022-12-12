@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Img, Wrapper, H3, H4, P } from "./CarouselContentElements";
-import slides from "../sliderImages";
+import { testimonials } from "../sliderImages";
 
 export default function CarouselContent({ activeIndex, nextSlide }) {
   return (
@@ -13,7 +13,7 @@ export default function CarouselContent({ activeIndex, nextSlide }) {
         interval={6500}
         variant="dark"
       >
-        {slides.map((item, index) => (
+        {testimonials.map((item, index) => (
           <Carousel.Item
             key={index}
             style={{

@@ -2,7 +2,7 @@ import dylan from "../assets/testimonials/dylan.jpeg";
 import morgan from "../assets/testimonials/morgan.jpeg";
 import justin from "../assets/testimonials/justin.jpeg";
 
-export default [
+export const testimonials = [
   {
     id: 1,
     image: dylan,
